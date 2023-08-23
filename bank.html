@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body style=" background-size: cover; background-image: url('img/polo.jpg')">
+    <h1 class="text-5xl text-center m-8 text-white"> POLOBANK DITALSE</h1>
+    <section>
+        <div class="grid grid-cols-3 gap-4 mx-auto w-9/12  mt-10 text-white">
+            <div class="bg-green-400 p-8 text-2xl rounded-xl">
+                <h2>deposit</h2>
+                <h2>$<span id="deposit-viwe">00</span></h2>
+            </div>
+            <div class="bg-red-300 p-8 text-2xl rounded-xl">
+                <h2>Withdraw</h2>
+                <h2>$<span id="withdarw-viwe">00</span></h2>
+            </div>
+            <div class="bg-blue-400 p-8 text-2xl rounded-xl">
+                <h2>balance</h2>
+                <h2>$<span id="balance-viwe">00</span></h2>
+            </div>
+        </div>
+        <div class=" grid grid-cols-2 gap-4 w-9/12 mx-auto mt-10 text-white font-medium text-2xl">
+            <div class="bg-orange-500 bg-opacity-50 p-10 rounded-lg space-y-4">
+                <h2>now deposit</h2>
+                <input  class="text-cyan-400" ="text" name="" id="input-text">
+                <button id="btn-deposit" class="p-2 bg-rose-400 block rounded-md hover:bg-opacity-20 border-2 border-cyan-400">deposit</button>
+            </div>
+            <div class="bg-red-500 bg-opacity-50 p-10 rounded-lg space-y-4">
+                <h2>now deposit</h2>
+                <input class="text-cyan-400" type="text" name="" id="input-documentation">
+                <button id="btn-withdraw" class="p-2 bg-blue-400 block rounded-md hover:bg-opacity-20 border-2 border-red-400">withdraw</button>
+            </div>
+        </div>
+    </section>
+    <script src="bank.js"></script>
+    <script src="withdraw.js"></script>
+</body>
+</html>
